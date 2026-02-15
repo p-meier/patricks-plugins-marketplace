@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "deep-researcher",
-      "source": "deep-researcher",
+      "source": "./plugins/deep-researcher",
       "description": "Deep research system with specialist agents, iterative analysis, and meta-principle extraction",
       "version": "0.1.0",
       "author": {
