@@ -1,0 +1,38 @@
+{
+  "description": "Deep Researcher: rate limiting + environment setup",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/rate-limit.sh",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "WebFetch",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "BLOCKED: Do not use WebFetch. Consult the web-research skill for how to fetch URLs (Firecrawl CLI via Bash)."
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

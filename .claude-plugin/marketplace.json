@@ -1,0 +1,24 @@
+{
+  "name": "patricks-plugins",
+  "owner": {
+    "name": "p-meier"
+  },
+  "metadata": {
+    "description": "Patrick's plugin marketplace for Claude Code",
+    "version": "0.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "deep-researcher",
+      "source": "deep-researcher",
+      "description": "Deep research system with specialist agents, iterative analysis, and meta-principle extraction",
+      "version": "0.1.0",
+      "author": {
+        "name": "pkmeier"
+      },
+      "keywords": ["research", "agents", "perplexity", "deep-research", "multi-agent", "meta-principles"],
+      "category": "research"
+    }
+  ]
+}

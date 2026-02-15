@@ -1,0 +1,9 @@
+{
+  "name": "deep-researcher",
+  "version": "0.1.0",
+  "description": "Deep research system with specialist agents, iterative analysis, and meta-principle extraction",
+  "author": {
+    "name": "pkmeier"
+  },
+  "keywords": ["research", "agents", "perplexity", "deep-research", "multi-agent", "meta-principles"]
+}

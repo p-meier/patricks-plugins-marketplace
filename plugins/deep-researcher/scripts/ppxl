@@ -1,0 +1,4 @@
+#!/bin/bash
+# Perplexity CLI wrapper — handles venv path internally
+PLUGIN_DIR="${CLAUDE_PLUGIN_ROOT:-$(cd "$(dirname "$0")/.." && pwd)}"
+exec "$PLUGIN_DIR/.venv/bin/python" "$PLUGIN_DIR/scripts/ppxl.py" "$@"
